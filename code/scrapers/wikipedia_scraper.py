@@ -92,3 +92,4 @@ for g in genres:
 		music.append((g, genre.summary, False, False))
 
 music = pd.DataFrame(music, columns=['genre', 'genre_summary', 'artist_list_page', 'artists'])
+music.to_csv('../data/wiki_scrape.csv', index=False)
